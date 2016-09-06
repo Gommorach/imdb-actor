@@ -7,7 +7,7 @@
     "icons" : {"48": "icon.png"},
 
    "content_scripts": [ {
-    "js": [ "jquery-3.1.0.min.js", "csv.js", "scripts.js" ],
+    "js": [ "jquery-3.1.0.min.js", "csv.js", "script.js" ],
     "matches": ["*://*.imdb.com/name*"]
   }]
 }

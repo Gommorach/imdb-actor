@@ -4,7 +4,6 @@ var watchlistRegex = /pageId.*content='(.*)'/;
 var userRegex = /\/user\/(.*)\//;
 
 $(document).ready(function() {
-  console.log("not only in imdb");
   userId = $('#navUserMenu > p > a').attr('href').match(userRegex)[1];
   $.ajax({
     url: 'http://www.imdb.com/user/' + userId + '/watchlist'

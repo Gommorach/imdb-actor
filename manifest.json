@@ -4,9 +4,11 @@
   "name": "I know that actor!",
   "description": "highlights all the movies from your watchlist on an actor's page",
   "version": "1.0",
-    "icons" : {"48": "icon.png"},
-
-   "content_scripts": [ {
+  "icons" : {"48": "icon.png"},
+  "permissions" : [
+    "storage"
+  ],
+  "content_scripts": [ {
     "js": [ "jquery-3.1.0.min.js", "csv.js", "script.js" ],
     "matches": ["*://*.imdb.com/name*"]
   }]

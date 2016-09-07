@@ -14,7 +14,7 @@ $(document).ready(function() {
       url: 'http://www.imdb.com/list/export?list_id=' + watchlistId + '&author_id=' + userId + '&ref_=wl_exp'
     }).done(function(data) {
       var rows = CSV.parse(data);
-      rows.shift(); //first row are row headers
+      rows.shift(); //first line is row headers
       var filmIds = rows.map(function(obj) {
         return obj[1];
       });

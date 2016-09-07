@@ -12,7 +12,6 @@ $(document).ready(function() {
   chrome.storage.sync.get('filmIds', function(data) {
     filmIds = data.filmIds;
     if (filmIds && filmIds.length == watchlistLength) {
-      console.log('success');
       colorFilms();
     } else {
     $.ajax({
